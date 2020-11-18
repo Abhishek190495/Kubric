@@ -17,7 +17,10 @@ def predict_price(area) -> float:
     """
     response = requests.get(TRAIN_DATA_URL)
     # YOUR IMPLEMENTATION HERE
-    ...
+   
+    from scipy import stats
+    print(response)
+    #slope, intercept, r_value, p_value, std_err = stats.linregress()
 
 
 if __name__ == "__main__":
